@@ -33,14 +33,13 @@ $$
 $$
 u = \begin{bmatrix} \dot{\phi}& \dot{\theta}& \dot{\psi} \end{bmatrix}^T \\  
 $$  
+
 $$
 A = I_3\\  
 $$
 
-
 $$
 B = \Delta t I_3\\  
-
 $$
 
 $$
