@@ -18,12 +18,32 @@ A RP2350 based gravity visualizer!
 We model the state space as three dimensional, including the x rotation $\phi$ the y rotation $\theta$ and the z rotation $\psi$. We use an Unscented Kalman Filter (UKF) to estimate the state, taking the gyroscope as the control input in the predict step where it conains the x rotation velocity, y rotational velocity, and z rotational velocity. This leads to state transition dynamics with the matrix A being the identity and the matrix B being the identity multiplied by the change in time $\Delta t$. The state space, control, and dynamics are given below:
 
 $$
-x \in \mathbb{R}^3\\  
-x = \begin{bmatrix} \phi& \theta& \psi \end{bmatrix}^T \\  
+x \in \mathbb{R}^3\\
+$$  
+
+$$
+x = \begin{bmatrix} \phi& \theta& \psi \end{bmatrix}^T \\
+$$  
+
+$$
 u \in \mathbb{R}^3\\  
+$$  
+
+
+$$
 u = \begin{bmatrix} \dot{\phi}& \dot{\theta}& \dot{\psi} \end{bmatrix}^T \\  
+$$  
+$$
 A = I_3\\  
+$$
+
+
+$$
 B = \Delta t I_3\\  
+
+$$
+
+$$
 x_{t+1} = Ax_{t} + Bu_{t}\\  
 $$
 
