@@ -1,0 +1,15 @@
+[submodule "firmware/eigen"]
+	path = firmware/eigen
+	url = https://github.com/PX4/eigen.git
+[submodule "firmware/pico-icm20948"]
+	path = firmware/pico-icm20948
+	url = https://github.com/MZandtheRaspberryPi/pico-icm20948.git
+[submodule "firmware/mpu6500"]
+	path = firmware/mpu6500
+	url = https://github.com/MZandtheRaspberryPi/mpu6500.git
+[submodule "firmware/TLV493D-A1B6-3DMagnetic-Sensor"]
+	path = firmware/TLV493D-A1B6-3DMagnetic-Sensor
+	url = https://github.com/MZandtheRaspberryPi/TLV493D-A1B6-3DMagnetic-Sensor.git
+[submodule "firmware/DFRobot_ICM42688"]
+	path = firmware/DFRobot_ICM42688
+	url = https://github.com/MZandtheRaspberryPi/DFRobot_ICM42688.git
